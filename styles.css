@@ -1,3 +1,7 @@
+.container {
+    display: flex;
+}
+
 .square {
     height: 16px;
     width: 16px;
