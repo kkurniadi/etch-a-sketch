@@ -8,6 +8,7 @@
 .square {
     height: 16px;
     width: 16px;
-    border: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
     flex: 1;
 }
