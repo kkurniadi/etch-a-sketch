@@ -28,7 +28,7 @@ gridButton.addEventListener("click", () => {
   if (size > 100) {
     alert("Whoa, a grid that size is too big to handle!");
   } else {
-    container.removeChild(".grid");
+    container.removeChild(container.firstChild);
     generateGrid(size);
   }
 });
