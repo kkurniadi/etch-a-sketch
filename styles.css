@@ -1,18 +1,19 @@
 .container {
     display: flex;
-    width: 1000px;
-    gap: 0;
+    width: 160px;
+    height: 160px;
+    align-content: center;
+    border: 1px solid black;
     flex-wrap: wrap;
 }
 
 .square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     height: 8px;
     width: 8px;
-    border-top: 1px solid black;
-    border-left: 1px solid black;
-    flex: 1;
-}
-
-.row:last-child {
-    border-right: 1px solid black;
+    margin: 0px;
+    border: 1px solid black;
 }
