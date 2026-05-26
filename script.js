@@ -7,5 +7,11 @@ for (let i = 0; i < 256; i++) {
 }
 
 container.addEventListener("mouseover", (e) => {
-  e.target.style.backgroundColor = "black";
+  // Prevent container from blacking out on mouseover
+  if (e.target !== e.currentTarget) {
+    e.target.style.backgroundColor = "black";
+    setTimeout(() => {
+      e.target.style.backgroundColor = "";
+    }, 500);
+  }
 });
