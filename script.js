@@ -19,4 +19,7 @@ container.addEventListener("mouseover", (e) => {
 
 gridButton.addEventListener("click", () => {
   let size = prompt("How many squares across should the new grid be?");
+  if (size > 100) {
+    alert("Whoa, a grid that size is too big to handle!");
+  }
 });
