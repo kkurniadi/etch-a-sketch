@@ -3,6 +3,7 @@ const gridButton = document.querySelector(".gridBtn");
 
 function generateGrid(len) {
   const grid = document.createElement("div");
+  grid.classList.add("grid");
   grid.style.height = len * 10;
   grid.style.width = len * 10;
   for (let i = 0; i < Math.pow(len, 2); i++) {
