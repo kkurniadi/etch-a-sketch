@@ -1,4 +1,5 @@
 const container = document.querySelector(".container");
+const gridButton = document.querySelector(".gridBtn");
 
 for (let i = 0; i < 256; i++) {
   const square = document.createElement("div");
@@ -14,4 +15,8 @@ container.addEventListener("mouseover", (e) => {
       e.target.style.backgroundColor = "";
     }, 500);
   }
+});
+
+gridButton.addEventListener("click", () => {
+  let size = prompt("How many squares across should the new grid be?");
 });
