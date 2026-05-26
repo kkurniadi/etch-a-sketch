@@ -5,8 +5,6 @@
 
 .grid {
     display: flex;
-    width: 160px;
-    height: 160px;
     align-content: center;
     border: 1px solid black;
     flex-wrap: wrap;
