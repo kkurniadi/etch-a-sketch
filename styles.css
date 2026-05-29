@@ -1,12 +1,12 @@
 .container {
     margin-top: 10px;
     width: 1000px;
+    height: 1000 px;
 }
 
 .grid {
     display: flex;
     align-content: center;
-    border: 1px solid black;
     flex-wrap: wrap;
 }
 
@@ -16,5 +16,4 @@
     justify-content: center;
     align-items: center;
     margin: 0px;
-    border: 1px solid black;
 }
