@@ -2,6 +2,13 @@ const container = document.querySelector(".container");
 const gridButton = document.querySelector(".gridBtn");
 const gridWidth = container.getBoundingClientRect().width - 2;
 
+function setColour(square) {
+  const RED = Math.floor(Math.random() * 256);
+  const GREEN = Math.floor(Math.random() * 256);
+  const BLUE = Math.floor(Math.random() * 256);
+  return `rgb(${RED}, ${GREEN}, ${BLUE})`;
+}
+
 function generateGrid(len) {
   const grid = document.createElement("div");
   grid.classList.add("grid");
