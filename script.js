@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
 const gridButton = document.querySelector(".gridBtn");
-const gridWidth = container.style.width;
+const gridWidth = container.getBoundingClientRect().width;
 
 function generateGrid(len) {
   const grid = document.createElement("div");
