@@ -22,7 +22,12 @@ function generateGrid(len) {
   grid.addEventListener("mouseover", (e) => {
     // Prevent entire grid from blacking out on mouseover
     if (e.target !== e.currentTarget) {
-      e.target.style.backgroundColor = setColour(e.target);
+      if (e.target.style.backgroundColor === "") {
+        e.target.style.backgroundColor = setColour(e.target);
+        e.target.style.opacity = 0.1;
+      } else {
+        e.target.style.opacity = parseFloat(e.target.style.opacity) + 0.1;
+      }
     }
   });
   container.appendChild(grid);
