@@ -13,9 +13,13 @@ function generateGrid(len) {
     grid.appendChild(square);
   }
   grid.addEventListener("mouseover", (e) => {
-    // Prevent container from blacking out on mouseover
+    // Prevent entire grid from blacking out on mouseover
     if (e.target !== e.currentTarget) {
       e.target.style.backgroundColor = "black";
+    }
+  });
+  grid.addEventListener("mouseout", (e) => {
+    if (e.target !== e.currentTarget) {
       setTimeout(() => {
         e.target.style.backgroundColor = "";
       }, 500);
