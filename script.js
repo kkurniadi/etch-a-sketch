@@ -7,8 +7,8 @@ function generateGrid(len) {
   grid.classList.add("grid");
   for (let i = 0; i < len ** 2; i++) {
     const square = document.createElement("div");
-    square.style.height = `${gridWidth / len}px`;
-    square.style.width = `${gridWidth / len}px`;
+    square.style.height = `${(gridWidth - 2) / len}px`;
+    square.style.width = `${(gridWidth - 2) / len}px`;
     square.classList.add("square");
     grid.appendChild(square);
   }
