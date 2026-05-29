@@ -18,13 +18,6 @@ function generateGrid(len) {
       e.target.style.backgroundColor = "black";
     }
   });
-  grid.addEventListener("mouseout", (e) => {
-    if (e.target !== e.currentTarget) {
-      setTimeout(() => {
-        e.target.style.backgroundColor = "";
-      }, 500);
-    }
-  });
   container.appendChild(grid);
 }
 
