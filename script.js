@@ -1,13 +1,14 @@
 const container = document.querySelector(".container");
 const gridButton = document.querySelector(".gridBtn");
+const gridWidth = container.style.width;
 
 function generateGrid(len) {
   const grid = document.createElement("div");
   grid.classList.add("grid");
   for (let i = 0; i < len ** 2; i++) {
     const square = document.createElement("div");
-    square.style.height = `${1000 / len}px`;
-    square.style.width = `${1000 / len}px`;
+    square.style.height = `${gridWidth / len}px`;
+    square.style.width = `${gridWidth / len}px`;
     square.classList.add("square");
     grid.appendChild(square);
   }
